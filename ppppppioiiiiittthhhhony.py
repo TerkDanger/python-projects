@@ -1,10 +1,10 @@
-print("hello world")
+import random
 
-name = input("what is your name")
+print("welcome")
+print("enter your question below:")
 
-print(name)
-
-color = input("what is your favorite color")
-if not color == 'blue':
-    print ("something will be bad will hapen")
-    
+while True: 
+    question = input('> ')
+    answers = ['yes.','no.','maybe.','ask again later.']
+    answer = random.choice(answers)
+    print(answer)
